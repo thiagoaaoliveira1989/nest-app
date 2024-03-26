@@ -11,7 +11,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { MusicService } from './music.service';
-import { CreateMusicDto } from './DTO/create-music.dto';
+import { CreateMusicDto } from './dto/create-music.dto';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { Music } from './entities/music.entity';

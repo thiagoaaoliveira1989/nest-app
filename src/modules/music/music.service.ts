@@ -3,7 +3,7 @@ import {
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
-import { CreateMusicDto } from './DTO/create-music.dto';
+import { CreateMusicDto } from './dto/create-music.dto';
 import { Music } from './entities/music.entity';
 import { PrismaService } from 'src/database/prisma.service';
 import { plainToInstance } from 'class-transformer';

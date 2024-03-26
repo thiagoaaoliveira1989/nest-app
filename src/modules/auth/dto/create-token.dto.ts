@@ -1,7 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { hashSync } from 'bcryptjs';
-import { Transform } from 'class-transformer';
-import { IsEmail, IsNotEmpty, IsString, MinLength } from 'class-validator';
+import { IsString } from 'class-validator';
 
 export class CreateTokenDto {
   @IsString()

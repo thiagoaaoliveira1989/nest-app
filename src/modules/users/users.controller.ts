@@ -10,7 +10,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { UserService } from './users.service';
-import { CreateUSerDto } from './DTO/create-user.dto';
+import { CreateUSerDto } from './dto/create-user.dto';
 import { User } from '@prisma/client';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
@@ -19,7 +19,7 @@ import { UpdateUSerDto } from './dto/update-user.dto';
 @ApiTags('User')
 @Controller('api/users')
 export class UserController {
-  constructor(private readonly service: UserService) { }
+  constructor(private readonly service: UserService) {}
 
   @HttpCode(201)
   @Post('/register')

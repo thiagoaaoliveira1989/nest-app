@@ -1,5 +1,5 @@
 import { ConflictException, Injectable } from '@nestjs/common';
-import { CreateUSerDto } from './DTO/create-user.dto';
+import { CreateUSerDto } from './dto/create-user.dto';
 import { User } from './entities/user.entity';
 import { PrismaService } from 'src/database/prisma.service';
 import { plainToInstance } from 'class-transformer';
@@ -49,7 +49,6 @@ export class UserService {
   }
 
   public async update(userId: string, payload: UpdateUSerDto): Promise<User> {
-
     const foundUser = await this.prisma.user.findUnique({
       where: { id: userId },
     });
