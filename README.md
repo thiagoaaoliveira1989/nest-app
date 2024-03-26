@@ -35,6 +35,9 @@ $ npm install
 ## Running the app
 
 ```bash
+# migration
+$ npm run migration
+
 # development
 $ npm run start
 
@@ -57,6 +60,15 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+
+## Teste Api in Render
+
+baseURL = https://nest-app-api-3o6c.onrender.com/api
+
+## Teste Api in swagger
+
+https://nest-app-api-3o6c.onrender.com/api/docs
 
 ## Support
 
